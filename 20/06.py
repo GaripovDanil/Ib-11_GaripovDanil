@@ -8,6 +8,7 @@ def extract_comments_with_line_numbers(program_text):
             comments_with_numbers.append(f"{line_number}: {line.strip().lstrip('#').strip()}")
     return comments_with_numbers
 
+
 with open('python.txt', 'r') as file:
     program_text = file.read()
 
